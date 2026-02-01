@@ -47,11 +47,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+
 }
 
 .header-container {
     display: flex;
     align-items: center;
+
 }
 
 .logo {
@@ -74,6 +77,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     align-items: center;
     column-gap: 40px;
+
 } 
 .navigation-list-item {
     position: relative;
@@ -92,11 +96,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navigation-link.current {
-    color: #4d5ae5;
+    color: #404bbf;
 }
 .navigation-link.current::after {
     content: "";
-    background-color: #4d5ae5;
+    background-color: #404bbf;
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -151,7 +155,7 @@ margin-left: auto;
     background-position: center;
     background-size: cover;
     padding: 188px 0;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     }
 
@@ -170,7 +174,7 @@ margin-left: auto;
 .hero-button {
     display: block;
     background-color: #4d5ae5;
-
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -270,6 +274,7 @@ margin-left: auto;
     display: flex;
     align-items: center;
     column-gap: 24px;
+
 }
 
 .team-list {
@@ -311,7 +316,7 @@ margin-left: auto;
 .social-link-list {
     display: flex;
     justify-content: center;
-    column-gap: 16px;
+    column-gap: 24px;
     align-items: center;
 }
 
@@ -366,9 +371,8 @@ margin-left: auto;
 .portfolio-list:hover .portfolio-overlay-item,
 .portfolio-list:focus .portfolio-overlay-item {
     transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
+
 .portfolio-list-overlay {
     position: relative;
     overflow: hidden;
@@ -388,6 +392,7 @@ margin-left: auto;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     padding: 40px 32px 164px 32px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-border {
@@ -421,6 +426,7 @@ margin-left: auto;
 
  .footer-block-item {
     display: flex;
+    align-items: baseline;
  }
  .footer-container {
     display: flex;
