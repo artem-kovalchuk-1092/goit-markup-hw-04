@@ -277,6 +277,8 @@ margin-left: auto;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px;
     max-width: 264px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
 
 .team-description {
@@ -334,6 +336,7 @@ margin-left: auto;
 /* #endregion team styles  */
 
 /* #region portfolio styles */
+
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -384,6 +387,7 @@ margin-left: auto;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    padding: 40px 32px 164px 32px;
 }
 
 .portfolio-border {
@@ -409,40 +413,72 @@ margin-left: auto;
 }
 /* #endregion portfolio styles */
 
-/* #region footer styles */
+/* #region footer styles */ 
 .footer-block {
-    background-color: #2e2f42;
-    padding: 100px 0;
-}
+     background-color: #2e2f42;
+     padding: 100px 0;
+ }
 
-.footer-block-container {
+ .footer-block-item {
     display: flex;
-
-}
-
-.footer-description {
+ }
+ .footer-container {
     display: flex;
     flex-direction: column;
     margin-right: 120px;
-}
 
-.footer-logo {
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #f4f4fd;
-    margin-bottom: 16px;
-}
+ }
 
-.footer-text {
+ .footer-logo {
+     display: inline-block;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 1.17;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: #f4f4fd;
+     margin-bottom: 16px;
+ }
+
+ .footer-text {
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+     color: #f4f4fd;
+     max-width: 264px;
+ }
+
+ .footer-social-title {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
-    max-width: 264px;
+    color: #fff;
+    margin-bottom: 16px;
+ }
+
+ .footer-social-list {
+    display: flex;
+    width: 208px;
+    column-gap: 16px;
+    align-items: center;
+ }
+
+.footer-social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #f4f4fd;
 }
+
+    .footer-social-link:hover,
+    .footer-social-link:focus {
+        background-color: #31d0aa;
+    }
 /* #endregion footer styles */
